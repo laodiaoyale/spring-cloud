@@ -1,0 +1,14 @@
+#spring:
+#  application:
+#    name: consummer
+#
+#server:
+#  port: 8003
+#
+#eureka:
+#  instance:
+#    appname: consummer
+#    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+#  client:
+#    serviceUrl:
+#        defaultZone: http://localhost:8082/eureka/

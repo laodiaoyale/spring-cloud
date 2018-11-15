@@ -1,0 +1,20 @@
+server:
+  port: 5580  #端口号
+ 
+spring:
+  application:
+    name: service-zuul  #服务注册中心测试名
+ 
+zuul:
+  routes:
+    api-a:
+      path: /user/**
+      serviceId: fcat-user  #如果是/ribbon/**路径下的请求，则跳转到service-ribbon
+    api-b:
+      path: /feign/**
+      serviceId: service-feign  #如果是/feign/**路径下的请求，则跳转到service-feign
+ 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8760/eureka/  #服务注册中心

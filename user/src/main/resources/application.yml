@@ -1,0 +1,14 @@
+#spring:
+#  application:
+#    name: user
+#
+#server:
+#  port: 8761
+#
+#eureka:
+##  instance:
+##    appname: fcat-user
+##    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+#  client:
+#    serviceUrl:
+#        defaultZone: http://localhost:8082/eureka/
